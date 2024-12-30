@@ -126,7 +126,7 @@ Configures the deployment of the Java application and PostgreSQL database.
 - Configure Jenkins agents to scale builds dynamically.
 
 ### Terraform
-- Use remote state (e.g., S3 bucket) for Terraform state management.
+- State Management: Use a remote backend (e.g., S3 with encryption) to manage Terraform state securely. By storing the Terraform state in a remote backend such as S3, you ensure that the  state is centralized, secure, and accessible for team collaboration. This practice also prevents issues caused by local state file corruption or accidental deletion. Remote state enables locking mechanisms to prevent simultaneous writes, ensuring consistency during updates. Additionally, it facilitates versioning and backups, providing a safety net for restoring previous states in case of errors.
 - Define clear variable structures for modularity.
 - Lock Terraform provider versions.
 
