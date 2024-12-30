@@ -1,0 +1,38 @@
+# Ignore Java build files
+*.class
+*.jar
+*.war
+*.ear
+*.log
+target/
+
+# Ignore Maven specific files
+.mvn/
+.settings/
+.project
+.classpath
+
+# Ignore Terraform files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# Ignore sensitive data and keys
+*.pem
+*.key
+*.crt
+*.pfx
+*.env
+~/.aws/*
+
+# Ignore Docker files
+*.log
+docker-compose.override.yml
+
+# Ignore general files
+*.swp
+*~
+.DS_Store
+Thumbs.db
